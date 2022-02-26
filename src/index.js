@@ -4,6 +4,7 @@ module.exports = function(context) {
   const { siteConfig } = context;
   const { themeConfig } = siteConfig;
   const { headway } = themeConfig || {};
+  
 
   if (!headway) {
     throw new Error(
@@ -33,13 +34,17 @@ module.exports = function(context) {
             tagName: "script",
             innerHTML: `
             var HW_config = {
-              selector: "${selector}", // CSS selector where to inject the badge
-              account: "${account}" // your account ID, you can find it in Settings->Widget
+              selector: "${selector}",
+              account: "${account}"
             };
+            Headway.init(config);
             `
           }
         ]
       };
-    }
+    },
+    getClientModules() {
+      return [path.join(__dirname, 'src/app.js')];
+    },
   };
 };
