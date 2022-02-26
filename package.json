@@ -1,6 +1,6 @@
 {
   "name": "docusaurus-plugin-headway",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "A plugin to integrate headway to your docusaurus site",
   "main": "src/index.js",
   "private": false,

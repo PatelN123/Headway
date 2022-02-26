@@ -44,7 +44,7 @@ module.exports = function(context) {
       };
     },
     getClientModules() {
-      return [path.join(__dirname, 'src/app.js')];
+      return [path.join(__dirname, 'app.js')];
     },
   };
 };
