@@ -1,0 +1,19 @@
+{
+  "name": "docusaurus-plugin-headway",
+  "version": "1.0.0",
+  "description": "A plugin to integrate headway to your docusaurus site",
+  "main": "src/index.js",
+  "private": false,
+  "dependencies": {},
+  "devDependencies": {},
+  "files": [
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=10.15.1"
+  },
+  "author": "Nayan Patel",
+  "license": "MIT"
+}
